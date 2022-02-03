@@ -105,7 +105,7 @@ function getRandomBumper() {
     const randNo = Math.floor((Math.random() * names.length));
     console.log(`%cThe winner is %c${names[randNo]} 🎉`, "font-size:50px", "color:red; font-size:50px; font-weight: bold");
     console.log(`Thanks for using the script! If it saved you time, consider buying me a coffee here: https://www.buymeacoffee.com/kenzojrc`)
-    alert(`The winner is ${names[randNo]} out of ${commentCount} comments 🎉 Thanks for using the script! If it saved you time, consider buying me a coffee here: https://www.buymeacoffee.com/kenzojrc`);
+    alert(`The winner is ${names[randNo]} out of ${names.length} comments 🎉 Thanks for using the script! If it saved you time, consider buying me a coffee here: https://www.buymeacoffee.com/kenzojrc`);
 }
 
 function main(){
