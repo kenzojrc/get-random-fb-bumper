@@ -64,6 +64,7 @@ function getComment(idx){
     if(getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div/div[2]/div/div[1]/div/div/div/div/span/span/a/span/span`)) return getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div/div[2]/div/div[1]/div/div/div/div/span/span/a/span/span`); // xpath ends in span/span/a/span/span when logged in. why? idk w facebook lol
     if(getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div/div[2]/div/div[1]/div/div/div/div/span/span/div/span/span`)) return getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div/div[2]/div/div[1]/div/div/div/div/span/span/div/span/span`); // xpath ends in span/span/div/span/span when logged out
     if(getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div[2]/div/div[1]/div/div/div/div/span/span/a/span/span`)) return getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div[2]/div/div[1]/div/div/div/div/span/span/a/span/span`); // this seems to be used when there are a lot of comments (>500)
+    if(getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div[2]/div/div[1]/div/div/div/div/span/span/div/span/span`)) return getElementByXpath(commentsContainer + `/li[${idx}]/div[1]/div[2]/div/div[1]/div/div/div/div/span/span/div/span/span`); // this seems to be used when there are a lot of comments (>500)
 
     return null;
 }
@@ -99,9 +100,9 @@ function getRandomBumper() {
         }
     }
 
-    console.log(`${commentCount} total comments`);
+    console.log(`${names.length} total comments`);
 
-    const randNo = Math.floor((Math.random() * commentCount));
+    const randNo = Math.floor((Math.random() * names.length));
     console.log(`%cThe winner is %c${names[randNo]} 🎉`, "font-size:50px", "color:red; font-size:50px; font-weight: bold");
     console.log(`Thanks for using the script! If it saved you time, consider buying me a coffee here: https://www.buymeacoffee.com/kenzojrc`)
     alert(`The winner is ${names[randNo]} out of ${commentCount} comments 🎉 Thanks for using the script! If it saved you time, consider buying me a coffee here: https://www.buymeacoffee.com/kenzojrc`);
