@@ -1,4 +1,5 @@
-// Created by Kenzo Castaneda
+// Get Random FB Bumper 🔮
+// Created by @kenzojrc
 // Only top-level comments are considered. Comments in comments will not be considered.
 
 function getElementByXpath(path) {

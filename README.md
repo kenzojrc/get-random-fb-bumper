@@ -1,8 +1,10 @@
 # Get Random FB Bumper 🔮
 
-Draws a name of a random commenter on a Facebook group's post.
+Draws a name of a random commenter on a Facebook group's post. 
 
-Tested only with Buy and Sell-type groups such as *The University Trade* and *The Katipunan Trade* with DESKTOP Chrome, Edge, and Firefox. 
+I didn't want to log in on some sketchy third-party app with my own FB account just to get a random comment, so I made this 😅
+
+Tested only with Buy and Sell-type groups such as *The University Trade* and *The Katipunan Trade* with **DESKTOP** Chrome, Edge, and Firefox. 
 
 This script is provided as-is with no warranty and may stop working at any time. 
 
