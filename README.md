@@ -8,12 +8,7 @@ This script is provided as-is with no warranty and may stop working at any time.
 
 ## How to Use
 
-1. Download **Get Random Bumper.html**
-2. Import the file as a bookmark in your browser and put it in your bookmarks bar
-3. Go to your post's **permalink** by clicking on the **date** below the poster's name (link should look like https://www.facebook.com/groups/TheUniversityTrade/posts/1572485526454048/).
-4. Open your browser console to see progress (optional)
-5. Click on the *Get Random Bumper* bookmark you added in Step 2.
-6. Wait until it completes.
+See this [page](https://kenzojrc.github.io/get-random-fb-bumper)
 
 ## Contribution
 
