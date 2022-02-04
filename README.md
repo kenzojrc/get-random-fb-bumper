@@ -12,6 +12,8 @@ This script is provided as-is with no warranty and may stop working at any time.
 
 See this [page](https://kenzojrc.github.io/get-random-fb-bumper)
 
+Found it useful? I'd appreciate a Star ⭐on GitHub or [buy me a coffee](https://www.buymeacoffee.com/kenzojrc) ☕
+
 ## Contribution
 
 If you find a bug, feel free to submit a pull request. You can also probably use this for other groups by editing the XPath selectors.
