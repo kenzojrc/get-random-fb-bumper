@@ -50,11 +50,21 @@ function getCommentsContainer(pathOnly) {
     return null;
 }
 
-function getChooseAllCommentsButton() {
-    const path = "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div/div/div/div[1]/div/div[3]/div[1]/div/div[1]/span"; // logged in
+function getViewMoreCommentsButton() {
+    const path = "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div[4]/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div[2]/div/div[4]/div/div/div[2]/div[3]/div/div[2]/span/span"; // logged in
 
     if(getElementByXpath(path)) return getElementByXpath(path);
 
+    return null;
+}
+
+function getChooseAllCommentsButton() {
+    const paths = ["/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div/div/div/div[1]/div/div[3]/div[1]/div/div[1]/span", "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/div/div/div/div[1]/div/div[2]/div[1]/div/div[2]/span"]; // logged in
+
+    for(const path of paths){
+        if(getElementByXpath(path)) return getElementByXpath(path);
+    }
+    
     return null;
 }
 
@@ -85,6 +95,7 @@ function loadMoreComments(){
 function switchToAllComments(){
     if(getViewCommentSettingButton()) getViewCommentSettingButton().click();
     setTimeout(() => {if(getChooseAllCommentsButton()) getChooseAllCommentsButton().click()}, 500);
+    setTimeout(() => {}, 500)
 }
 
 
@@ -110,6 +121,8 @@ function getRandomBumper() {
 
 function main(){
     switchToAllComments();
+    if(getViewMoreCommentsButton()) getViewMoreCommentsButton().click()
+    setTimeout(() => {}, 500)
 
     const id = setInterval(() => {
         try {
